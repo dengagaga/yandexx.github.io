@@ -1,0 +1,37 @@
+.start {
+    padding-bottom: 128px;
+    @media(max-width:375px) {
+        padding-bottom: 72px;
+    }
+    &_all {
+        display: grid;
+        grid-template-columns:362px 400px ;
+        font-size: 24px;
+        gap: 112px;
+        @media(max-width:375px) {
+            grid-template-columns: 311px;
+            font-size: 16px;
+            gap: 27px;
+        }
+    }
+    &_all-section img{
+        margin-bottom: 16px;
+    }
+    &_all-section {
+        @media(max-width:375px) {
+           display: flex;
+           gap: 16px;
+           align-items: center;
+        }
+    }
+    
+}
+
+.title {
+    width: 837px;
+    margin-bottom: 48px;
+    @media(max-width:375px) {
+        font-size: 36px;
+        max-width: 311px;
+    }
+}

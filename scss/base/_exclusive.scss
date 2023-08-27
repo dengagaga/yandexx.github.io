@@ -1,0 +1,106 @@
+.exclusive {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 500px;
+        height: 500px;
+        background-image: url(/img/smkt0010\ 6.svg);
+        bottom: 60px;
+        right: 340px; 
+        z-index: 10;
+        @media(max-width:375px) {
+            display: none;
+            padding-bottom: 72px;
+         }
+    }
+    padding-bottom: 88px;
+    &_text {
+        font-size: 24px;
+        width: 442px;
+        margin-bottom: 69px;
+        @media(max-width:375px) {
+           font-size: 16px;
+           width: 311px;
+        }
+    }
+    &_all-img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 28px;
+        column-gap: 28px;
+        position: relative;
+        @media(max-width:375px) {
+            display: none;
+         }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 365px;
+            height: 364px;
+            background-image: url(../img/cfee0016.svg);
+            top: -310px;
+            left: 740px; 
+            z-index: 10;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            width: 365px;
+            height: 364px;
+            background-image: url(../img/smkt0008\ 2.svg);
+            top: -130px;
+            left: -260px; 
+            z-index: 10;
+            @media(max-width:375px) {
+                display: none;
+             }
+        }
+    }
+    &_img-one {
+        border-radius: 46px;
+        transform: rotate(2deg);
+    }
+    &_img-two {
+        margin-top: -160px;
+        border-radius: 46px;
+        transform: rotate(2deg);
+        z-index: 1;
+        
+    }
+    &_img-thri {
+       margin-left: -15px;
+       border-radius: 46px;
+    transform: rotate(2deg);
+    }
+    &_img-four {
+        margin-top: -160px;
+        margin-left: -15px;
+        border-radius: 46px;
+        transform: rotate(2deg);
+    }
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.none-sw {
+    display: none;
+    @media(max-width:375px) {
+        display: block;
+     }
+}
+.swiper {
+    margin-bottom: 24px;
+}
+.swiper-wrapper {
+    display: inline-flex;
+    
+}
+.radius {
+    border-radius: 46px;
+}
+.swiper-button-all {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}

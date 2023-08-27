@@ -1,0 +1,13 @@
+.footer {
+    padding-bottom: 128px;
+    @media(max-width:375px) {
+        padding-bottom: 100px;
+
+     }
+    &_text {
+        width: 906px;
+        font-size: 13px;
+        font-family: 'text-regular';
+        color: rgba(197, 197, 197, 1);
+    }
+}
